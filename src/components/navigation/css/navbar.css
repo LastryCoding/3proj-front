@@ -1,0 +1,21 @@
+.main-sidenav {
+    background-color: #0bb5e5 !important;
+    height: auto !important;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999 !important;
+}
+.main-sidenav-ul {
+    list-style: none;
+    padding-left: 5px !important;
+}
+.main-sidenav-li {
+    padding: 15px !important;
+}
+.main-sidenav-i {
+    color : #fff !important;
+}
+@media only screen and ( min-width:1366px ){
+    .main-sidenav {
+        min-height: 600px !important;
+    }
+}

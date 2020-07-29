@@ -1,0 +1,30 @@
+.main-profile-card {
+    background-color: #fff !important;
+    padding: 25px !important;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4) !important;
+
+}
+.profile-media-picture {
+    border-radius: 50% !important;
+    border: 2px solid #ccc !important;
+}
+.badeel-blue-heading {
+    color: #0bb5e5 !important;
+    margin-bottom: 0 !important;
+    font-weight: bold !important;
+}
+.profile-info-span {
+    color: #8a8787 !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+.profile-info-data-span {
+    font-size: 14px !important;
+    color: #8a8787 !important;
+    display: block !important;
+}
+.span-info-data-name {
+    font-weight: bold !important;
+    color: #8a8787 !important;
+    font-size: 16px !important;
+}
