@@ -152,7 +152,7 @@ export default function Home() {
                           <th>ReceivedAt</th>
                           <th>Priority</th>
                           <th>Message</th>
-                          <th>SyslogTag</th>
+                          <th>SysLogTag</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -161,7 +161,7 @@ export default function Home() {
                             <td>{element.ReceivedAt}</td>
                             <td>{element.Priority}</td>
                             <td>{element.Message}</td>
-                            <td>{element.SyslogTag}</td>
+                            <td>{element.SysLogTag}</td>
                           </tr>
                         ))}
                       </tbody>
