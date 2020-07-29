@@ -5,6 +5,7 @@ import UserContext from "../context/UserContext";
 export default function Home() {
   const [User, setUser] = useState({});
   const { userData } = useContext(UserContext);
+  const [Data, setData] = useState([]);
 
   useEffect(() => {
     if (userData.user !== undefined) {
@@ -21,7 +22,6 @@ export default function Home() {
     });
   }, []);
 
-  const [Data, setData] = useState([]);
 
   return (
     <div id="wrapper">
