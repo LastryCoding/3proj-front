@@ -153,17 +153,15 @@ export default function Home() {
                           <th>Priority</th>
                           <th>Message</th>
                           <th>SyslogTag</th>
-                          <th>Email ID.</th>
                         </tr>
                       </thead>
                       <tbody>
                         {Data.map((element, i) => (
                           <tr key={i}>
-                            <td>1</td>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>John15482</td>
-                            <td>name@site.com</td>
+                            <td>{element.ReceivedAt}</td>
+                            <td>{element.Priority}</td>
+                            <td>{element.Message}</td>
+                            <td>{element.SyslogTag}</td>
                           </tr>
                         ))}
                       </tbody>
