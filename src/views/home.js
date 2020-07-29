@@ -9,11 +9,6 @@ export default function Home() {
     if (userData.user !== undefined) {
       setUser({ ...userData.user });
     }
-  }, [userData]);
-
-  const [Data, setData] = useState([]);
-
-  useEffect(() => {
     axios
       .get("http://localhost:5000/logs")
       .then((response) => {
@@ -23,7 +18,9 @@ export default function Home() {
       .catch((err) => {
         console.error(err);
       });
-  }, []);
+  }, [userData]);
+
+  const [Data, setData] = useState([]);
 
   return (
     <div id="wrapper">
