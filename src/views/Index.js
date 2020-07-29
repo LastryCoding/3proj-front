@@ -9,7 +9,7 @@ import Home from "./home";
 import axios from "axios";
 import Logout from "../components/auth/logout";
 import Navbar from "../components/navigation/navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import "aos/dist/aos.css";
 import { Container, Row } from "react-bootstrap";
 
@@ -66,7 +66,7 @@ export default function Index() {
   }, []);
 
   if (Loading) {
-    return <LoadingGif />;
+    return <p>Loading ...</p>;
   } else {
     if (userData.user) {
       return (
@@ -75,7 +75,6 @@ export default function Index() {
             <Route exact path="/">
               <Container fluid className="p-0">
                 <Row className="m-0">
-                  <Navbar userData={userData} />
                   <Home />
                 </Row>
               </Container>

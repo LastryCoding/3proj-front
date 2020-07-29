@@ -156,7 +156,6 @@ export default function SignInSide() {
                 </Link>
               </Grid>
             </Grid>
-            <Copyright />
           </form>
         </div>
       </Grid>

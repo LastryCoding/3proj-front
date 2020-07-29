@@ -5,7 +5,6 @@ import RoutePrivate from "./views/Index";
 import Home from "./views/home";
 import Login from "./components/auth/login";
 import UserContext from "./context/UserContext";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 import "./App.css";
 
