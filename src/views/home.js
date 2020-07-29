@@ -5,20 +5,21 @@ import UserContext from "../context/UserContext";
 export default function Home() {
   const [User, setUser] = useState({});
   const { userData } = useContext(UserContext);
+
   useEffect(() => {
     if (userData.user !== undefined) {
       setUser({ ...userData.user });
     }
     axios
-      .get("http://localhost:5000/logs")
-      .then((response) => {
-        console.log(response);
-        setData(response.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, [userData]);
+    .get("http://localhost:5000/logs")
+    .then((response) => {
+      console.log(response);
+      setData(response.data);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  }, []);
 
   const [Data, setData] = useState([]);
 
