@@ -145,7 +145,7 @@ axios.get("http://localhost:5000/logs").then(response=>{
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {Data.map((elemen,it)=>
+                                            {Data.map((element,i)=>
                                                 <tr key={i} >
                                                 <td>1</td>
                                                 <td>John</td>
